@@ -11,5 +11,8 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 # enable compile commands to generate the json file for clangd
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+# enable debugging
+set(CMAKE_BUILD_TYPE Debug)
+
 add_subdirectory(dependencies)
 add_subdirectory(src)
