@@ -1,1 +1,3 @@
-This is a text file which is new and needs to be tracked with my repository.
+This is a text file needs to be tracked with my repository.
+
+this is another line to this file
