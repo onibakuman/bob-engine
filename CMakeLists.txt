@@ -38,3 +38,7 @@ CPMAddPackage("gh:libsdl-org/SDL#release-3.2.0")
 set(SDL_EXAMPLES OFF)
 
 target_link_libraries(${PROJECT_NAME} SDL3::SDL3 Vulkan::Vulkan)
+
+# TODO: ADD TESTS
+# add tests as well
+#add_subdirectory(tests)
