@@ -12,7 +12,12 @@
 static SDL_Window *window = NULL;
 static SDL_Renderer *renderer = NULL;
 
-/* This function runs once at startup. */
+/*  */
+/**  
+ * @brief This function runs once at startup.
+ * @param appstate The state of the app
+ * @return the state of the engine
+ */
 SDL_AppResult SDL_AppInit(void **appstate, int argc, char *argv[]) {
     SDL_SetAppMetadata("Bob Game Engine - AKA Best of Bakuman", "1.0", "net.onibakuland.games");
 

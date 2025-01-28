@@ -51,4 +51,5 @@ include/divisible/*
 build/**/*
 
 bin/*
+docs/
 test/test_runner
