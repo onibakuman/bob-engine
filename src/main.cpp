@@ -12,7 +12,6 @@
 static SDL_Window *window = NULL;
 static SDL_Renderer *renderer = NULL;
 
-/*  */
 /**  
  * @brief This function runs once at startup.
  * @param appstate The state of the app

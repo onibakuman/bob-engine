@@ -17,6 +17,7 @@ set(CMAKE_BUILD_TYPE Debug)
 # set source files for project
 set(SRC
     ./src/main.cpp
+    ./lib/vulkan-handler.cpp
 )    
 
 add_executable(${PROJECT_NAME} ${SRC})
@@ -36,8 +37,9 @@ find_package(Vulkan REQUIRED)
 # external dependencies
 CPMAddPackage("gh:libsdl-org/SDL#release-3.2.0")
 set(SDL_EXAMPLES OFF)
+CPMAddPackage("gh:zeux/volk#1.4.304")
 
-target_link_libraries(${PROJECT_NAME} SDL3::SDL3 Vulkan::Vulkan)
+target_link_libraries(${PROJECT_NAME} SDL3::SDL3 Vulkan::Vulkan volk::volk)
 
 # TODO: ADD TESTS
 # add tests as well
